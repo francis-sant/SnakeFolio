@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThreeJS Demo</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: black;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      h1 {
+        margin-top: 60px;
+        font-size: 40px;
+        color: white;
+      }
+
+      h2 {
+        color: #05fff3;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      p {
+        color: white;
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+
+      a {
+        background: #ffffff91;
+        padding: 20px;
+        border-radius: 1em;
+        border: 1px solid white;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      a:hover {
+        background-color: aliceblue;
+        color: black;
+      }
+      img {
+        height: 150px;
+        border-radius: 3em;
+      }
+
+      .big-banner,
+      .portfolio {
+        position: absolute;
+        margin: auto auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: black;
+        width: 90%;
+        background: #ffffff47;
+        height: 95vh;
+        border-radius: 2em;
+        border: 1px solid white;
+        top: 0;
+        bottom: 0;
+      }
+
+      .snakefolio {
+        display: flex;
+        align-items: center;
+        padding: 100px 0;
+        width: 90%;
+        margin: auto;
+        gap: 3em;
+      }
+
+      .snakefolio2 {
+        display: flex;
+        padding: 50px 0;
+        width: 90%;
+        margin: auto;
+        gap: 10%;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .deactivate {
+        display: none;
+      }
+
+      .activate {
+        display: none;
+      }
+
+      .about,
+      .instructions {
+        width: 50%;
+      }
+
+      .project1,
+      .project2,
+      .project3 {
+        border: 3px solid white;
+        border-radius: 3em;
+        padding: 20px;
+        height: 610px;
+        position: relative;
+        background: black;
+      }
+
+      #btn2 {
+        padding: 15px;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="big-banner">
+      <h1>SnakeFolio</h1>
+
+      <div class="snakefolio">
+        <div class="about">
+          <h2>About</h2>
+          <p>
+            This project was developed as a part of the Web Programming 2
+            course, with the main objective of exploring the capabilities of the
+            Three.js library. Initially, the intention was to create a simple
+            page as a portfolio using Three.js and to experiment with this
+            powerful tool. However, during the development process, an exciting
+            idea emerged: to create a fun and engaging game using only geometric
+            objects.
+          </p>
+        </div>
+
+        <div class="instructions">
+          <h2>Instructions</h2>
+          <img src="img/Controls.png" alt="" />
+          <p>
+            Use the mouse to navigate and interact with the game. The mouse
+            movement will control the direction of the snake's head. As you move
+            the mouse, the snake's head will follow the movement. To move the
+            snake just "Grab holding the right click", dont find the cube? What
+            about zoom out or in completely. The purpuse is to see how long can
+            you grow your snake. Be careful, you might see some projects along
+            the way.
+          </p>
+        </div>
+      </div>
+      <a href="" id="btn">Start Game</a>
+    </section>
+
+    <section class="portfolio deactivate">
+      <h1>My Projects</h1>
+
+      <div class="snakefolio2">
+        <div class="project1">
+          <img src="img/Yoga Studio.png" alt="yoga website picture" />
+          <h2>Yoga Studio</h2>
+          <p>
+            This portfolio project was created as the final project for a Web
+            Design and Creation course. The project showcases the implementation
+            of best practices, SEO techniques, a responsive layout, and ensuring
+            website accessibility.
+          </p>
+          <a
+            href="/website-creation-design/yogaStudio/index.html"
+            id="btn2"
+            target="_blank"
+            >Check Project</a
+          >
+        </div>
+
+        <div class="project2">
+          <img src="img/Tic-tac-toe-game.png" alt="tic tac toe picture" />
+          <h2>TIC TAC TOE</h2>
+          <p>
+            This basic Tic Tac Toe game was created as the final project for the
+            Web Programming course. It served as a portfolio project to
+            demonstrate my skills in using JavaScript, CSS, and HTML. This
+            project marked an important milestone for me as it was my first
+            complete project using JavaScript.
+          </p>
+          <a
+            href="/intro-to-programming/tic-tac-toe/index.html"
+            id="btn2"
+            target="_blank"
+            >Check Project</a
+          >
+        </div>
+
+        <div class="project3">
+          <img src="img/ChatApp.png" alt="Chat App picture" />
+          <h2>Chat App</h2>
+          <p>
+            As part of the web interface course, we were tasked with creating a
+            basic Chat App using PHP, CSS, JavaScript, and HTML. This project
+            held great significance as it provided an opportunity to showcase
+            our proficiency in utilizing the tools and concepts covered
+            throughout the course. It served as a testament to our skills and
+            understanding of web interface development.
+          </p>
+          <a href="/web-Interface/chatChatt/index.php" id="btn2" target="_blank"
+            >Check Project</a
+          >
+        </div>
+      </div>
+      <a href="" id="btn-continue">Continue Game</a>
+    </section>
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- <script src="js/three.min.js"></script> -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
